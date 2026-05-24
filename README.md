@@ -344,8 +344,8 @@ Contributions are welcome and appreciated! Here's how to get involved:
 ### 1. 🍴 Fork & Clone
 
 ```sh
-git clone https://github.com/your-username/hr_ms.git
-cd hr_ms
+git clone https://github.com/asohyannick/.net_hr_management_system.git
+cd .net_hr_management_system
 ```
 
 ### 2. 🌿 Create a Feature Branch

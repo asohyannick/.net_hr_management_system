@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NsDepCopConfig>
+    <Allowed From="*" To="*" />
+
+    <Disallowed From="Minimalhr_ms.Web.Domain.*"
+				To="Minimalhr_ms.Web.Infrastructure.*" />
+    
+    <Disallowed From="Minimalhr_ms.Web.CartFeatures.*"
+				To="Minimalhr_ms.Web.Infrastructure.*" />
+    
+    <Disallowed From="Minimalhr_ms.Web.ProductFeatures.*"
+				To="Minimalhr_ms.Web.Infrastructure.*" />
+    
+    <Disallowed From="Minimalhr_ms.Web.Domain.OrderAggregate.*"
+				To="Minimalhr_ms.Web.Domain.CartAggregate.*" />
+
+    <AnalyzerConfig>
+        <IssueKind Name="IllegalDependency" Severity="Error" />
+    </AnalyzerConfig>
+</NsDepCopConfig>

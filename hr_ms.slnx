@@ -1,0 +1,33 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".template.config/template.json" />
+    <File Path="CleanArchitecture.nuspec" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/hr_ms.Core/hr_ms.Core.csproj" />
+    <Project Path="src/hr_ms.Infrastructure/hr_ms.Infrastructure.csproj" />
+    <Project Path="src/hr_ms.UseCases/hr_ms.UseCases.csproj" />
+    <Project Path="src/hr_ms.Web/hr_ms.Web.csproj" />
+  </Folder>
+  <Folder Name="/src/_aspire/">
+    <Project Path="src/hr_ms.AspireHost/hr_ms.AspireHost.csproj" />
+    <Project Path="src/hr_ms.ServiceDefaults/hr_ms.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/hr_ms.FunctionalTests/hr_ms.FunctionalTests.csproj">
+      <BuildDependency Project="src/hr_ms.Web/hr_ms.Web.csproj" />
+    </Project>
+    <Project Path="tests/hr_ms.IntegrationTests/hr_ms.IntegrationTests.csproj">
+      <BuildDependency Project="src/hr_ms.Infrastructure/hr_ms.Infrastructure.csproj" />
+    </Project>
+    <Project Path="tests/hr_ms.UnitTests/hr_ms.UnitTests.csproj" />
+  </Folder>
+</Solution>
